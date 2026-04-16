@@ -6,7 +6,7 @@ import base64
 
 app = FastAPI()
 
-videopath = "badapple.mp4"
+videopath = "badapple-h264.mp4"
 cap = cv2.VideoCapture(videopath)
 
 @app.get("/frame/{frame_number}")
